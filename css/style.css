@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;  
+}
+header{
+    /* border: 2px solid white; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav{
+    background-color: #2370f4;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 25px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+    /* font-size: large; */
+}
+.logo img{
+    width: 100px;
+    padding: 0px 22px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 45vw;
+    height: 4vh;
+    border-radius: 5px;
+    margin: 0 7px 0 25px;
+    border: 1px solid white;
+    padding: 0 12px;
+}
+.search button{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+main{
+    margin-top: 80px;
+    padding-bottom: 15px;
+}
+.slider img{
+    border-radius: 5px;
+}
+.container{
+    min-height: calc(100vh - 56px - 12vh);
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    margin: 12px 80px;
+    width: 87vw;
+    /* overflow: initial; */
+}
+.card{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 91vw;   
+    padding-bottom: 10px; 
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+.card-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12vw;
+    margin: 0 15px;
+}
+.card-items img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    transition: width 0.3s ease; /* Smooth transition effect only for width */
+}
+.card-items:hover img {
+    width: 103%; /* Adjust the width as needed */
+  }
+.card-items img{
+    border-radius: 7px;
+}
+.card h3{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+footer{
+    height: 12vh;
+    background-color: #2370f4   ;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
